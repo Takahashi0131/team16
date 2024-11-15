@@ -15,4 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}
+  
+);
+Route::get('edgs', function () {
+    return view('edgs');
+}
+  
+);
+
+Route::get('foo',function()
+ {
+ return'Bar';
+ });
+ Route::get('articles','ArticlesController@index');
