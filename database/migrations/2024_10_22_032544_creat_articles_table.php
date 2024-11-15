@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePopulationStatisticsTable extends Migration  // 修改類別名稱為 CreatePopulationStatisticsTable
+class CreatArticlesTable extends Migration  
 {
     /**
      * Run the migrations.
