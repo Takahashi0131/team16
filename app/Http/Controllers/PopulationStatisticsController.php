@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Population_statisticsController extends Controller
+class PopulationStatisticsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,9 @@ class Population_statisticsController extends Controller
      */
     public function index()
     {
-        $population_statistics = population_statistics:: All();
-        return $population_statistics
-        r
+        //$population_statistics = population_statistics:: All();
+        return view('edgs');
+        
     }
 
     /**
