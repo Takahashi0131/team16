@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class PopulationStatisticsTableSeeder extends Seeder
+class PopulationStatistics extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class PopulationStatisticsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('population_statistics')->insert([
+        DB::table('population_Statistics')->insert([
             [
                 'region' => '總計',
                 'household_count_113_1' => 97855,
