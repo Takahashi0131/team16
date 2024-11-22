@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Population_statistic;
 
 class PopulationStatisticsController extends Controller
 {
@@ -13,8 +14,10 @@ class PopulationStatisticsController extends Controller
      */
     public function index()
     {
-        //$population_statistics = population_statistics:: All();
-        return view('edgs');
+          $population_statistics = Population_statistic::all();
+          //return view() $population_statistics;
+          return view('populationstatistics.index', compact('population_statistics'));
+
         
     }
 

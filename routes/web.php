@@ -15,22 +15,22 @@ use App\Http\Controllers\PopulationStatisticsController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// }
+ Route::get('/', function () {
+    return view('welcome');
+}
   
-// );
-// Route::get('edgs', function () {
-//     return view('edgs');
-// }
+ );
+ Route::get('edgs', function () {
+     return view('edgs');
+}
   
-// );
+ );
 
-// Route::get('foo',function()
-//  {
-//  return'Bar';
-//  });
+ Route::get('foo',function()
+ {
+ return'Bar';
+  });
 
-//  Route::get('articles','ArticlesController@index');
+ Route::get('articles','ArticlesController@index');
 
  Route::get('Population_statistics',[PopulationStatisticsController::class, 'index']);
