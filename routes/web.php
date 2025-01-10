@@ -35,13 +35,10 @@ use App\Http\Controllers\PopulationStatisticsController;
 
  Route::get('Population_statistics',[PopulationStatisticsController::class, 'index']);
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/population/create', [PopulationStatisticsController::class, 'create'])->name('population.create');
+Route::post('/population', [PopulationStatisticsController::class, 'store'])->name('population.store');
 
 Auth::routes();
 
@@ -50,3 +47,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// Define the route for 'edgs.blade.php'
+

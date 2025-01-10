@@ -17,10 +17,26 @@ class PopulationStatisticsController extends Controller
           $population_statistics = Population_statistic::all();
           //return view() $population_statistics;
           return view('populationstatistics.index', compact('population_statistics'));
-
+        }
         
-    }
 
+
+
+
+        // 返回首頁
+        public function index1()
+        {
+            return view('index');  // 返回 index.blade.php
+        }
+    
+        // 返回永續發展目標頁面
+        public function edgs()
+        {
+            return view('edgs');  // 返回 edgs.blade.php
+        }
+
+
+    
     /**
      * Show the form for creating a new resource.
      *
